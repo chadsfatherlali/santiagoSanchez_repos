@@ -1,0 +1,11 @@
+.main {
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media (max-width: 801px) {
+  .main {
+    flex-direction: column-reverse;
+  }
+}

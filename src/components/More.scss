@@ -1,0 +1,40 @@
+@import '../variables.scss';
+
+.more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 5px solid #cbcbcb;
+    box-shadow: 0px 6px 32px 0px #cbcbcb inset;
+    -webkit-box-shadow: 0px 6px 32px 0px #cbcbcb inset;
+    -moz-box-shadow: 0px 6px 32px 0px #cbcbcb inset;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0px 30px 60px 0px #cbcbcb inset;
+      -webkit-box-shadow: 0px 30px 60px 0px #cbcbcb inset;
+      -moz-box-shadow: 0px 30px 60px 0px #cbcbcb inset;
+    }
+  }
+  &__icon {
+    display: flex;
+    font-weight: bolder;
+    font-size: 200px;
+    color: #cbcbcb;
+    margin-top: -50px;
+  }
+}
+
+@media (max-width: 801px) {
+  .more {
+    width: 96%;
+  }
+}

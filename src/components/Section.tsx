@@ -38,9 +38,7 @@ const Section: FC = () => {
 
         PokemonApi
           .search((results as unknown as IResults)[0].name)
-          .then((pokemonData: (IPokemon | {})) => {
-            setPokemonFullData(pokemonData)
-          })
+          .then((pokemonData: (IPokemon | {})) => setPokemonFullData(pokemonData))
       })
   }, [setPokemons, setPokemonFullData])
 
